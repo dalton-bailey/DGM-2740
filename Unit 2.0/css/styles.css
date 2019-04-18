@@ -120,7 +120,7 @@ header {
     border-radius: 25px; }
 
 nav {
-  background-color: darksalmon;
+  background-color: green;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     float: left;
@@ -137,9 +137,9 @@ nav {
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #e2734e; }
+    background-color: #004d00; }
   nav ul li a:hover {
-    color: darksalmon;
+    color: green;
     background-color: white; }
 
 main figure.banner {
@@ -149,7 +149,7 @@ main figure.banner img {
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
-  color: darksalmon; }
+  color: green; }
 main h2 {
   font-size: 1.5rem;
   margin: 0.75rem 0 0 2%;
@@ -174,7 +174,7 @@ main div.blog article {
 
 footer {
   width: 100%;
-  background-color: darksalmon; }
+  background-color: green; }
   footer p {
     text-align: center;
     color: white;
@@ -201,7 +201,7 @@ footer {
       margin: 0.5rem 2%; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 80rem;
+    max-width: 75rem;
     margin: 2rem auto;
     box-shadow: 0 0 10px #000000; }
 

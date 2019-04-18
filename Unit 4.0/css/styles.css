@@ -109,7 +109,8 @@ body {
 
 header {
   color: antiquewhite;
-  padding: 1rem 2%; }
+  padding: 1rem 2%;
+  margin-top: -90px; }
   header h1 {
     font-size: 2rem;
     font-weight: 300; }
@@ -140,31 +141,33 @@ nav {
     color: darkseagreen;
     background-color: green; }
 
-main h1 {
-  font-size: 2rem;
-  margin: 1rem 0 0 2%;
-  color: darkseagreen; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: white; }
-main h3 {
-  font-size: 1.2rem;
-  color: #4d4d4d; }
-main p {
-  line-height: 130%;
-  color: black; }
-main figure.photo {
-  width: 96%;
-  margin: 0.5rem 2%; }
-main figure.photo img {
-  width: 100%; }
-main figure.photo figcaption {
-  text-align: center;
-  color: darkseagreen; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+main {
+  padding-bottom: 50px; }
+  main h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 2%;
+    color: darkseagreen; }
+  main h2 {
+    font-size: 1.5rem;
+    margin: 0.75rem 0 0 2%;
+    color: white; }
+  main h3 {
+    font-size: 1.2rem;
+    color: #4d4d4d; }
+  main p {
+    line-height: 130%;
+    color: black; }
+  main figure.photo {
+    width: 96%;
+    margin: 0.5rem 2%; }
+  main figure.photo img {
+    width: 100%; }
+  main figure.photo figcaption {
+    text-align: center;
+    color: darkseagreen; }
+  main div.blog article {
+    margin: 0.5rem 2%;
+    width: 96%; }
 
 footer {
   width: 100%;
@@ -196,6 +199,9 @@ footer {
     margin: 2rem auto;
     box-shadow: 0 0 10px #000000; }
 
+  header {
+    margin-left: 85px; }
+
   body figure.banner {
     width: 100%;
     background-color: darkseagreen; }
@@ -206,7 +212,7 @@ footer {
     width: 80%; }
 
   nav ul {
-    margin-left: 2%;
+    margin-left: 96px;
     border-left: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     width: auto; }

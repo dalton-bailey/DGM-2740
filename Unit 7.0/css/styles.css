@@ -104,7 +104,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: lightgrey;
+  background-color: tan;
   color: black;
   padding: 1rem 2%;
   border-top: .25rem solid green; }
@@ -138,7 +138,7 @@ nav {
     background-color: #ffffad; }
   nav ul li a:hover {
     color: lightyellow;
-    background-color: lightgrey; }
+    background-color: tan; }
 
 main figure.banner {
   width: 100%; }
@@ -149,16 +149,16 @@ main .attorney {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid lightgrey;
+  border: 1px solid tan;
   margin: 15px 10px 20px 10px;
   width: 200px;
   height: 300px;
   background-color: lightyellow; }
 main .blogpost {
-  border: 1px solid lightgrey;
+  border: 1px solid tan;
   background-color: lightyellow; }
 main .learn {
-  background-color: lightgrey;
+  background-color: tan;
   border: none;
   color: black;
   padding: 8px 20px;
@@ -166,7 +166,7 @@ main .learn {
   text-decoration: none;
   border-radius: 10px; }
 main .read {
-  background-color: lightgrey;
+  background-color: tan;
   border: none;
   color: black;
   padding: 10px;
@@ -201,14 +201,14 @@ main div.blog article {
 main div.bottom article {
   background-color: lightyellow;
   margin: .5rem;
-  border: 1px solid lightgrey;
+  border: 1px solid tan;
   padding: .5rem; }
 main div.bottom article h3 {
   padding: 0.5rem- 2%; }
 main div.bottom article p {
   padding: 0.5rem- 2%; }
 main .button {
-  background-color: lightgrey;
+  background-color: tan;
   border: none;
   color: black;
   padding: 20px 30px;

@@ -10,20 +10,9 @@ body {
 
 //Overall styling for the HEADER of the document.
 header {
-    display: flex;
-    align-items: flex-end;
     background-color: $primaryColor;
     color: $fontColor;
     padding: 1rem $gutter;
-
-    figure img {
-        width: 200px;
-        border-radius: 25px;
-    }
-
-    div {
-        margin-left: 10px;
-    }
 
     h1 {
         font-size: 2rem;
@@ -83,7 +72,7 @@ main {
     h1 {
         font-size: 2rem;
         margin: 1rem 0 0 $gutter;
-        color: $fontColor;
+        color: $secondaryColor;
     }
 
     h2 {
@@ -108,8 +97,6 @@ main {
     }
     figure.photo img {
         width: 100%;
-        border-radius: 50%;
-        float: right;
     }
 
     figure.photo figcaption {
@@ -120,10 +107,6 @@ main {
     div.blog article {
         margin: .5rem $gutter;
         width: 100%-$gutterdbl;
-    }
-
-    .members {
-        display:flex;
     }
 }
 
