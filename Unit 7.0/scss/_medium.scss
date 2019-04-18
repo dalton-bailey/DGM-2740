@@ -1,0 +1,30 @@
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        width: 100%-$gutterdbl;
+        margin: .5rem $gutter;
+    }
+
+    div.blog article {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    div.blog article:nth-child(2n+1) {
+        clear:left;
+    }
+    
+    div.attorneys .attorney {
+        float: left;
+        width: 25%-$gutterdbl;
+    }
+
+    div.bottom article {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    div.bottom .question {
+        width: 15%;
+    }
+}

@@ -1,0 +1,204 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+//Overall styling for the BODY of the document.
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+}
+
+//Overall styling for the HEADER of the document.
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $primaryColor;
+    color: $fontColor;
+    padding: 1rem $gutter;
+    border-top: .25rem solid green;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: $normalWeight;    
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: $normalWeight;
+    }
+}
+
+//Overall styling for the NAVIGATION of the document.
+    nav {
+        background-color: $secondaryColor;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+        ul {
+            margin-left: $gutter;
+            
+        }
+        
+        ul li {
+            float: left;
+            width: 25%;
+            width: auto;
+        }
+
+        ul li:last-child {
+            border-right: none;
+        }
+
+        ul li a {
+            display: block;
+            text-align: center;
+            font-weight: $boldWeight;
+            padding: .5rem 1rem;
+            color: $fontColor;
+            text-decoration: none;
+            transition: background 0.75s ease, color  0.75s ease;
+        }
+
+        ul li.active a {
+            background-color: darken($secondaryColor, 10%);
+        }
+
+        ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
+    }
+
+//Overall styling for the MAIN of the document.
+main {
+    figure.banner {
+        width: 100%;
+    }
+
+    figure.banner img {
+        width: 100%;
+    }
+
+    .attorney {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid $primaryColor;
+        margin: 15px 10px 20px 10px;
+        width: 200px;
+        height: 300px;
+        background-color: $secondaryColor;
+    }
+
+    .blogpost {
+        border: 1px solid $primaryColor;
+        background-color: $secondaryColor;
+    }
+
+    .learn {
+        background-color: $primaryColor;
+        border: none;
+        color: $fontColor;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .read {
+        background-color: $primaryColor;
+        border: none;
+        color: $fontColor;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0 0 $gutter;
+        color: $secondaryColor;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: .75rem 0 0 $gutter;
+        color: lighten( $fontColor, 40% );
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        color: lighten( $fontColor, 30% );
+    }
+
+    p {
+        line-height: 130%;
+        color: $fontColor;
+    }
+
+    div.attorneys .attorney {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    figure.photo {
+        width: 100%;
+    }
+    figure.photo img {
+        width: 100%;
+    }
+
+    div.blog article {
+        margin: .5rem $gutter;
+        width: 100%-$gutterdbl;
+    }
+
+    div.bottom article {
+        background-color: $secondaryColor;
+        margin: .5rem;
+        border: 1px solid $primaryColor;
+        padding: .5rem;
+    }
+
+    div.bottom article h3 {
+        padding: .5rem-$gutter;
+    }
+
+    div.bottom article p {
+        padding: .5rem-$gutter;
+    }
+
+    .med-section {
+    }
+
+    .button {
+        background-color: $primaryColor;
+        border: none;
+        color: $fontColor;
+        padding: 20px 30px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+//Overall styling for the FOOTER of the document.
+footer {
+    width: 100%;
+    background-color: $secondaryColor;
+
+    p {
+        text-align: center;
+        color: $fontColor;
+        padding: .75rem;
+        font-size: .9rem;
+    }
+}
+
+//Clearfix: Force an Element not ot collapse.
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
