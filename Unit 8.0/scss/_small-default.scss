@@ -13,6 +13,14 @@ header {
     background-color: $primaryColor;
     color: $fontColor;
     padding: 1rem $gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .logo {
+        width: 200px;
+        border-radius: 25px;
+    }
 
     h1 {
         font-size: 2rem;
@@ -61,41 +69,51 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
+    width: 65rem;
+    margin: 0 auto;
+
     .first-row {
         display:flex;
-    }
-    h1 {
-        font-size: 2rem;
-        margin: 1rem 0 0 $gutter;
-        color: $secondaryColor;
+        justify-content: space-between;
+        margin: 20px;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
+    // .first-row figcaption {
+    //     margin-top: -40px;
+    //     padding-left: 15px;
+    //     font-size: 1.5rem;
+    //     color: white;
+    // }
+
+    .first-row figure.photo {
+        max-width: 50%;
     }
 
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $fontColor, 30% );
+    .first-row figure.photo-1 img {
+        height: 100%;
+        border: solid 1px red;
     }
 
-    p {
-        line-height: 130%;
-        color: $fontColor;
+    .first-row figure.photo-2 {
+        height: 50%;
     }
 
-    figure.photo {
-        width: 100%-$gutterdbl;
-        margin: .5rem $gutter;
-    }
-    figure.photo img {
-        width: 100%;
+    .first-row figure.photo-3 {
+        height: 50%;
     }
 
-    figure.photo figcaption {
-        color: $secondaryColor;
+    .first-column {
+        display:flex;
+        flex-direction: column;
+        border: solid 1px red;
+    }
+
+    .second-row {
+        display: flex;
+    }
+
+    .second-row .photo img {
+        width: 25%;
     }
 }
 
