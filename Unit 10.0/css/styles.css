@@ -99,23 +99,16 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 16px; }
-  body figure.banner {
-    width: 100%; }
-  body figure.banner img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; }
 
 header {
-  color: white;
-  padding: 1rem 2%;
-  margin-top: -130px; }
+  background-color: lavenderblush;
+  color: black;
+  padding: 1rem 2%; }
   header h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 300; }
   header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300; }
 
 nav {
@@ -123,7 +116,7 @@ nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     float: left;
-    width: 15%;
+    width: 25%;
     border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li:last-child {
     border-right: none; }
@@ -132,15 +125,19 @@ nav {
     text-align: center;
     font-weight: 700;
     padding: .5rem 0;
-    color: lightyellow;
+    color: lavenderblush;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
     background-color: #ff8da1; }
   nav ul li a:hover {
     color: pink;
-    background-color: lightyellow; }
+    background-color: lavenderblush; }
 
+main figure.banner {
+  width: 100%; }
+main figure.banner img {
+  width: 100%; }
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
@@ -169,7 +166,7 @@ main div.blog article {
 
 footer {
   width: 100%;
-  background-color: lightyellow; }
+  background-color: lavenderblush; }
   footer p {
     text-align: center;
     color: pink;
@@ -193,7 +190,7 @@ footer {
     clear: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 64rem;
+    max-width: 80rem;
     margin: 2rem auto;
     box-shadow: 0 0 10px #000000; }
 
