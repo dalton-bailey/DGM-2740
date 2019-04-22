@@ -95,6 +95,10 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+div#wrapper {
+  max-width: 70rem;
+  margin: 2rem auto; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -103,115 +107,79 @@ body {
 header {
   background-color: lavenderblush;
   color: black;
-  padding: 1rem 2%; }
+  padding: 1rem 2%;
+  border-bottom: solid 2px pink; }
   header h1 {
-    font-size: 2rem;
-    font-weight: 300; }
-  header h2 {
-    font-size: 1.5rem;
-    font-weight: 300; }
+    font-size: 2rem; }
 
 nav {
-  background-color: pink;
+  background-color: lavenderblush;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul {
+    display: flex;
+    justify-content: center; }
   nav ul li {
-    float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  nav ul li img {
+    width: 50px; }
   nav ul li:last-child {
     border-right: none; }
   nav ul li a {
-    display: block;
+    width: 100%;
     text-align: center;
     font-weight: 700;
     padding: .5rem 0;
-    color: lavenderblush;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
+  nav ul li p {
+    color: black; }
   nav ul li.active a {
+    width: 100%;
     background-color: #ff8da1; }
   nav ul li a:hover {
-    color: pink;
-    background-color: lavenderblush; }
+    width: 100%;
+    background-color: pink; }
 
-main figure.banner {
-  width: 100%; }
-main figure.banner img {
-  width: 100%; }
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
   color: pink; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: #666666; }
-main h3 {
-  font-size: 1.2rem;
-  color: #4d4d4d; }
-main p {
-  line-height: 130%;
-  color: black; }
-main figure.photo {
-  width: 96%;
-  margin: 0.5rem 2%; }
-main figure.photo img {
-  width: 100%; }
-main figure.photo figcaption {
-  text-align: center;
-  color: pink; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
-
-footer {
+main .content {
+  display: flex; }
+main .hotels {
+  background-color: lavenderblush;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+main .banner img {
   width: 100%;
-  background-color: lavenderblush; }
-  footer p {
-    text-align: center;
-    color: pink;
-    padding: .75rem;
-    font-size: .9rem; }
+  border-radius: 10px; }
+main figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: -25px; }
+main .information {
+  display: flex; }
+main .location img {
+  width: 50px; }
+main .phone img {
+  width: 50px; }
+main .location {
+  height: 50px;
+  display: flex; }
+main .phone {
+  height: 50px;
+  display: flex; }
+
+footer p {
+  padding: .75rem; }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
-
-@media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
-@media only screen and (min-width: 1140px) {
-  div#wrapper {
-    max-width: 80rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
-
-  nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li a {
-    padding: .5rem 1rem; }
-
-  main figure.photo {
-    width: 21%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; } }
