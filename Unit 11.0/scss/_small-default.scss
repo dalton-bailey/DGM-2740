@@ -4,7 +4,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 //Overall styling for the BODY of the document.
 div#wrapper {
     max-width: 70rem;
-    margin: 2rem auto;
+    margin: auto;
     // box-shadow: 0 0 10px #000000;
 }
 body {
@@ -60,7 +60,7 @@ header {
             width: 100%;
             text-align: center;
             font-weight: $boldWeight;
-            padding: .5rem 0;
+            padding: 1rem;
             text-decoration: none;
             transition: background 0.75s ease, color  0.75s ease;
         }
@@ -92,12 +92,15 @@ main {
 
     h1 {
         font-size: 2rem;
-        margin: 1rem 0 0 $gutter;
-        color: $secondaryColor;
+        padding: .5rem $gutter;
+        color: black;
     }
 
     .content {
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
     }
 
     .hotels {
@@ -105,6 +108,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 500px;
+        padding: 25px 45px 25px 45px; 
+        margin-top: 10px;
     }
 
     .banner img {
@@ -116,11 +122,15 @@ main {
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
-        margin-top: -25px;
+        margin-top: -40px;
+        padding: 10px;
     }
 
     .information {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
     }
 
     .location img {
@@ -134,11 +144,21 @@ main {
     .location {
         height: 50px;
         display: flex;
+        align-items: center;
+    }
+
+    .location p {
+        margin-left: 5px;
     }
 
     .phone {
         height: 50px;
         display: flex;
+        align-items: center;
+    }
+
+    .phone p {
+        margin-left: 10px;
     }
 
     // figure.photo {
@@ -161,12 +181,6 @@ main {
 }
 
 //Overall styling for the FOOTER of the document.
-footer {
-
-    p {
-        padding: .75rem;
-    }
-}
 
 //Clearfix: Force an Element not ot collapse.
 .clearfix:after {
