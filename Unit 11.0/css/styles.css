@@ -102,7 +102,7 @@ div#wrapper {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 14px; }
 
 header {
   background-color: lavenderblush;
@@ -110,7 +110,7 @@ header {
   padding: 1rem 2%;
   border-bottom: solid 2px pink; }
   header h1 {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 nav {
   background-color: lavenderblush;
@@ -145,12 +145,12 @@ nav {
     background-color: pink; }
 
 main h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem 2%;
   color: black; }
 main .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 15px; }
 main .hotels {
@@ -158,7 +158,7 @@ main .hotels {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 350px;
   padding: 25px 45px 25px 45px;
   margin-top: 10px; }
 main .banner img {
@@ -184,13 +184,15 @@ main .location {
   display: flex;
   align-items: center; }
 main .location p {
-  margin-left: 5px; }
+  margin-left: 5px;
+  padding: 3px; }
 main .phone {
   height: 50px;
   display: flex;
   align-items: center; }
 main .phone p {
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 3px; }
 
 .clearfix:after {
   content: "";

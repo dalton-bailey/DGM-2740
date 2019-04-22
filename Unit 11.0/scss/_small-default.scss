@@ -5,12 +5,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 div#wrapper {
     max-width: 70rem;
     margin: auto;
-    // box-shadow: 0 0 10px #000000;
 }
 body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 //Overall styling for the HEADER of the document.
@@ -21,13 +20,8 @@ header {
     border-bottom: solid 2px $secondaryColor;
 
     h1 {
-        font-size: 2rem;
-        // font-weight: $normalWeight;    
+        font-size: 1.5rem;   
     }
-    // h2 {
-    //     font-size: 1.5rem;
-    //     font-weight: $normalWeight;
-    // }
 }
 
 //Overall styling for the NAVIGATION of the document.
@@ -82,23 +76,16 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-    // figure.banner {
-    //     width: 100%;
-    // }
-
-    // figure.banner img {
-    //     width: 80%;
-    // }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: .5rem $gutter;
         color: black;
     }
 
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 15px;
     }
@@ -108,7 +95,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 500px;
+        width: 350px;
         padding: 25px 45px 25px 45px; 
         margin-top: 10px;
     }
@@ -149,6 +136,7 @@ main {
 
     .location p {
         margin-left: 5px;
+        padding: 3px;
     }
 
     .phone {
@@ -159,28 +147,10 @@ main {
 
     .phone p {
         margin-left: 10px;
+        padding: 3px;
     }
-
-    // figure.photo {
-    //     width: 100%-$gutterdbl;
-    //     margin: .5rem $gutter;
-    // }
-    // figure.photo img {
-    //     width: 100%;
-    // }
-
-    // figure.photo figcaption {
-    //     text-align: center;
-    //     color: $secondaryColor;
-    // }
-
-    // div.blog article {
-    //     margin: .5rem $gutter;
-    //     width: 100%-$gutterdbl;
-    // }
 }
 
-//Overall styling for the FOOTER of the document.
 
 //Clearfix: Force an Element not ot collapse.
 .clearfix:after {
