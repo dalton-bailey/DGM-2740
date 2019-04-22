@@ -159,7 +159,7 @@ main .hotels {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 15px 10px 15px;
   margin-top: 10px; }
 main .banner img {
   width: 100%;
@@ -182,8 +182,7 @@ main .phone img {
 main .location {
   height: 50px;
   display: flex;
-  align-items: center;
-  font-weight: bold; }
+  align-items: center; }
 main .location p {
   margin-left: 5px;
   padding: 2px;
@@ -194,7 +193,7 @@ main .phone {
   align-items: center; }
 main .phone p {
   margin-left: 10px;
-  padding: 3px; }
+  font-weight: bold; }
 
 .clearfix:after {
   content: "";
