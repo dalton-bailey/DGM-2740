@@ -6,31 +6,20 @@ body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
-
-    figure.banner {
-        width: 100%;
-    }
-
-    figure.banner img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
 }
 
 //Overall styling for the HEADER of the document.
 header {
-    color: white;
+    background-color: $primaryColor;
+    color: $fontColor;
     padding: 1rem $gutter;
-    margin-top: -130px;
 
     h1 {
-        font-size: 4rem;
-        font-weight: $normalWeight;   
+        font-size: 2rem;
+        font-weight: $normalWeight;    
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: $normalWeight;
     }
 }
@@ -42,7 +31,7 @@ header {
 
         ul li {
             float: left;
-            width: 15%;
+            width: 25%;
             border-right: 1px solid rgba(0,0,0,0.3);
         }
 
@@ -72,62 +61,52 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-    @keyframes slidy {
-        0% { left: 0%; }
-        20% { left: 0%; }
-        25% { left: -100%; }
-        45% { left: -100%; }
-        50% { left: -200%; }
-        70% { left: -200%; }
-        75% { left: -300%; }
-        95% { left: -300%; }
-        100% { left: -400%; }
-        }
-        
-        body { margin: 0; } 
-        div#slider { overflow: hidden; }
-        div#slider figure img { width: 20%; float: left; }
-        div#slider figure { 
-          position: relative;
-          width: 500%;
-          margin: 0;
-          left: 0;
-          text-align: left;
-          font-size: 0;
-          animation: 30s slidy infinite; 
-        }
-        
+    figure.banner {
+        width: 100%;
+    }
+
+    figure.banner img {
+        width: 100%;
+    }
+
     h1 {
         font-size: 2rem;
+        margin: 1rem 0 0 $gutter;
         color: $secondaryColor;
-        margin: 30px 0px 10px 0px;
     }
 
-    .section {
-        margin: 10px;
+    h2 {
+        font-size: 1.5rem;
+        margin: .75rem 0 0 $gutter;
+        color: lighten( $fontColor, 40% );
     }
 
-    .square-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    h3 {
+        font-size: 1.2rem;
+        color: lighten( $fontColor, 30% );
     }
 
-    .card {
-        width: 200px;
-        height: 200px;
+    p {
+        line-height: 130%;
+        color: $fontColor;
+    }
+
+    figure.photo {
+        width: 100%-$gutterdbl;
+        margin: .5rem $gutter;
+    }
+    figure.photo img {
+        width: 100%;
+    }
+
+    figure.photo figcaption {
         text-align: center;
-        background-color: $secondaryColor;
-        padding: 15px;
+        color: $secondaryColor;
     }
 
-    .card p {
-        font-weight: bold;
-        padding-top: 5px;
-    }
-
-    .card img{
-        width: 50px;
+    div.blog article {
+        margin: .5rem $gutter;
+        width: 100%-$gutterdbl;
     }
 }
 
