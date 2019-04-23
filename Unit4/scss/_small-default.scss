@@ -18,6 +18,10 @@ body {
         margin-right: auto;
         width: 100%;
     }
+
+    figure.banner img:hover {
+        opacity: .8;
+    }
 }
 
 //Overall styling for the HEADER of the document.
@@ -25,6 +29,7 @@ header {
     color: $fontColor;
     padding: 1rem $gutter;
     margin-top: -90px;
+    position: absolute;
 
     h1 {
         font-size: 2rem;

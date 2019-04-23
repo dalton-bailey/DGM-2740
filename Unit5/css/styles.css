@@ -167,7 +167,7 @@ main figure.photo {
   margin: 1rem 0 0 2%;
   float: right; }
 main figure.photo img {
-  width: 100%;
+  width: 100vw;
   margin: 1rem 0 0 2%;
   float: right; }
 main figure.photo figcaption {
@@ -196,7 +196,10 @@ footer {
 @media only screen and (min-width: 560px) {
   main figure.photo {
     width: 46%;
-    margin: 0.5rem 2%;
+    margin: 0.5rem 2%; }
+  main figure.photo img {
+    width: 58.3vw;
+    margin: 1rem 0 0 2%;
     float: right; }
   main div.blog article {
     float: left;
@@ -208,8 +211,7 @@ footer {
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 75rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    margin: auto; }
 
   nav ul {
     margin-left: 2%;
@@ -224,12 +226,12 @@ footer {
   main figure.photo {
     width: 21%;
     margin: 0.5rem 2%; }
+  main figure.photo img {
+    width: 41.6vw;
+    margin: 1rem 0 0 2%;
+    float: right; }
   main div.blog article {
     float: left;
     width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; }
   main p.story {
     column-count: 4; } }

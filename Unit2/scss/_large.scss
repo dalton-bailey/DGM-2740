@@ -1,31 +1,19 @@
 //Overall styling for the BODY of the document.
 div#wrapper {
-    max-width: 60rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000;
+    max-width: 85rem;
+    margin: auto;
 }
-
 header {
-    margin-left: 85px;
-}
-body {
-    figure.banner {
-        width: 100%;
-        background-color: $secondaryColor;
-    }
-
-    figure.banner img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
+    max-width: 75rem;
+    margin: auto;
 }
 
 //Overall styling for the NAVIGATION of the document.
 nav {
     ul {
-        margin-left: 96px;
+        max-width: 75rem;
+        margin: auto;
+        // margin-left: $gutter;
         border-left: 1px solid rgba(0,0,0,0.3);
     }
 
@@ -44,13 +32,16 @@ nav {
 
 //Overall styling for the MAIN of the document.
 main {
+    max-width: 75rem;
+    margin: auto;
+    
     figure.photo {
         width: 25%-$gutterdbl;
-        margin: .5rem $gutter;
-        float: left;
+        // margin: .5rem $gutter;
     }
 
-    div.blog article {
+
+  /*  div.blog article {
         float:left;
         width: 33.33%-$gutterdbl;
     }
@@ -61,6 +52,6 @@ main {
 
     div.blog article:nth-child(3n+1) {
         clear:left;
-    }
+    }*/
 
 }

@@ -98,29 +98,21 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  max-width: 80rem;
-  margin: 2rem auto; }
+  font-size: 16px; }
 
 header {
-  display: flex;
-  align-items: flex-end;
   background-color: white;
-  color: black;
+  color: purple;
   padding: 1rem 2%; }
-  header div {
-    margin-left: 10px; }
   header h1 {
     font-size: 2rem;
     font-weight: 300; }
   header h2 {
     font-size: 1.5rem;
     font-weight: 300; }
-  header figure img {
-    border-radius: 25px; }
 
 nav {
-  background-color: green;
+  background-color: palevioletred;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     float: left;
@@ -137,9 +129,9 @@ nav {
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #004d00; }
+    background-color: #d14774; }
   nav ul li a:hover {
-    color: green;
+    color: palevioletred;
     background-color: white; }
 
 main figure.banner {
@@ -149,32 +141,32 @@ main figure.banner img {
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
-  color: green; }
+  color: palevioletred; }
 main h2 {
   font-size: 1.5rem;
   margin: 0.75rem 0 0 2%;
-  color: #666666; }
+  color: #ff4dff; }
 main h3 {
   font-size: 1.2rem;
-  color: #4d4d4d; }
+  color: #ff1aff; }
 main p {
   line-height: 130%;
-  color: black;
-  margin: 0.75rem 0 0 2%; }
+  color: purple; }
 main figure.photo {
   width: 96%;
-  margin: 0.5rem 2%;
-  float: right; }
+  margin: 0.5rem 2%; }
 main figure.photo img {
-  width: 100%;
-  margin: 0.75rem 0 0 2%; }
+  width: 100%; }
+main figure.photo figcaption {
+  text-align: center;
+  color: palevioletred; }
 main div.blog article {
   margin: 0.5rem 2%;
   width: 96%; }
 
 footer {
   width: 100%;
-  background-color: green; }
+  background-color: palevioletred; }
   footer p {
     text-align: center;
     color: white;
@@ -187,23 +179,19 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main {
-   /* div.blog article {
-        float: left;
-        width: 50%-$gutterdbl;
-    }
-
-    div.blog article:nth-child(2n+1) {
-        clear:left;
-    }*/ }
-    main figure.photo {
-      width: 46%;
-      margin: 0.5rem 2%; } }
+  main figure.photo {
+    width: 46%;
+    margin: 0.5rem 2%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 46%; }
+  main div.blog article:nth-child(2n+1) {
+    clear: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 75rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    max-width: 71.25rem;
+    margin: auto; }
 
   nav ul {
     margin-left: 2%;
@@ -215,19 +203,14 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
-  main {
-  /*  div.blog article {
-        float:left;
-        width: 33.33%-$gutterdbl;
-    }
-
-    div.blog article:nth-child(2n+1) {
-        clear:none;
-    }
-
-    div.blog article:nth-child(3n+1) {
-        clear:left;
-    }*/ }
-    main figure.photo {
-      width: 21%;
-      margin: 0.5rem 2%; } }
+  main figure.photo {
+    width: 21%;
+    margin: 0.5rem 2%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 29.33%; }
+  main div.blog article:nth-child(2n+1) {
+    clear: none; }
+  main div.blog article:nth-child(3n+1) {
+    clear: left; } }

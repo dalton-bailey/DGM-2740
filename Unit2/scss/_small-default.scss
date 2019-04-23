@@ -6,8 +6,8 @@ body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
-    max-width: 80rem;
-    margin: 2rem auto;
+    margin: auto;
+    letter-spacing: 1px;
 }
 
 //Overall styling for the HEADER of the document.
@@ -16,7 +16,7 @@ header {
     align-items: flex-end;
     background-color: $primaryColor;
     color: $fontColor;
-    padding: 1rem $gutter;
+    padding: 10px 10px 10px 0;
 
     div {
         margin-left: 10px;
@@ -39,7 +39,7 @@ header {
 //Overall styling for the NAVIGATION of the document.
     nav {
         background-color: $secondaryColor;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+        border-top: 3px solid lightgreen;
 
         ul li {
             float: left;
@@ -81,41 +81,42 @@ main {
         width: 100%;
     }
 
-    h1 {
+    h2 {
         font-size: 2rem;
-        margin: 1rem 0 0 $gutter;
+        // margin: .5rem 0 0 $gutter;
         color: $secondaryColor;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
-    }
+    // h2 {
+    //     font-size: 1.5rem;
+    //     margin: .75rem 0 0 $gutter;
+    //     color: lighten( $fontColor, 40% );
+    // }
 
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $fontColor, 30% );
-    }
+    // h3 {
+    //     font-size: 1.2rem;
+    //     color: lighten( $fontColor, 30% );
+    // }
 
     p {
         line-height: 130%;
         color: $fontColor;
-        margin: .75rem 0 0 $gutter;
+        margin: .75rem 0;
     }
 
     figure.photo {
         width: 100%-$gutterdbl;
-        margin: .5rem $gutter;
+        // margin: .5rem $gutter;
         float: right;
     }
+    
     figure.photo img {
         width: 100%;
-        margin: .75rem 0 0 $gutter;
+        // margin: .75rem 0 0 $gutter;
     }
 
     div.blog article {
-        margin: .5rem $gutter;
+        // margin: .5rem $gutter;
         width: 100%-$gutterdbl;
     }
 }
