@@ -167,7 +167,7 @@ main figure.photo {
   margin: 1rem 0 0 2%;
   float: right; }
 main figure.photo img {
-  width: 100vw;
+  width: 100%;
   margin: 1rem 0 0 2%;
   float: right; }
 main figure.photo figcaption {
@@ -198,7 +198,6 @@ footer {
     width: 46%;
     margin: 0.5rem 2%; }
   main figure.photo img {
-    width: 58.3vw;
     margin: 1rem 0 0 2%;
     float: right; }
   main div.blog article {
@@ -227,7 +226,7 @@ footer {
     width: 21%;
     margin: 0.5rem 2%; }
   main figure.photo img {
-    width: 41.6vw;
+    width: 100%;
     margin: 1rem 0 0 2%;
     float: right; }
   main div.blog article {

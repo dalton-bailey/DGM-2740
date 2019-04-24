@@ -102,28 +102,21 @@ main {
         color: $fontColor;
     }
 
-    figure.photo {
-        width: 100%-$gutterdbl;
-        margin: .5rem $gutter;
-    }
     figure.photo img {
-        width: 100%;
-        border-radius: 50%;
-        float: right;
+        width: 200px;
+        clip-path: circle(50%);
     }
 
-    figure.photo figcaption {
-        text-align: center;
-        color: $secondaryColor;
-    }
-
-    div.blog article {
-        margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
-    }
-
-    .members {
+    .member div {
         display:flex;
+        justify-content: space-between;
+    }
+
+    
+    .members {
+        column-count: 1;
+        margin: 1rem 0 0 $gutter;
+        shape-outside: circle(50%);
     }
 }
 

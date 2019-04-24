@@ -103,7 +103,7 @@ body {
 header {
   display: flex;
   align-items: flex-end;
-  background-color: yellow;
+  background-color: lightyellow;
   color: black;
   padding: 1rem 2%; }
   header figure img {
@@ -132,14 +132,14 @@ nav {
     text-align: center;
     font-weight: 700;
     padding: .5rem 0;
-    color: yellow;
+    color: lightyellow;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
     background-color: #cc8400; }
   nav ul li a:hover {
     color: orange;
-    background-color: yellow; }
+    background-color: lightyellow; }
 
 main figure.banner {
   width: 100%; }
@@ -159,25 +159,20 @@ main h3 {
 main p {
   line-height: 130%;
   color: black; }
-main figure.photo {
-  width: 96%;
-  margin: 0.5rem 2%; }
 main figure.photo img {
-  width: 100%;
-  border-radius: 50%;
-  float: right; }
-main figure.photo figcaption {
-  text-align: center;
-  color: orange; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+  width: 200px;
+  clip-path: circle(50%); }
+main .member div {
+  display: flex;
+  justify-content: space-between; }
 main .members {
-  display: flex; }
+  column-count: 1;
+  margin: 1rem 0 0 2%;
+  shape-outside: circle(50%); }
 
 footer {
   width: 100%;
-  background-color: yellow; }
+  background-color: lightyellow; }
   footer p {
     text-align: center;
     color: orange;
@@ -190,20 +185,12 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
+  main .members {
+    column-count: 2; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 75rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    margin: auto; }
 
   nav ul {
     margin-left: 2%;
@@ -215,14 +202,5 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
-  main figure.photo {
-    width: 21%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; } }
+  main .members {
+    column-count: 4; } }
