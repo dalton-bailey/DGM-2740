@@ -140,31 +140,42 @@ nav {
     color: lightyellow;
     background-color: tan; }
 
-main figure.banner {
-  width: 100%; }
-main figure.banner img {
+main .attorneys {
+  column-count: 2;
+  margin: 0.5rem 2%;
   width: 100%; }
 main .attorney {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   border: 1px solid tan;
-  margin: 15px 10px 20px 10px;
   width: 200px;
   height: 300px;
   background-color: lightyellow; }
-main .blogpost {
-  border: 1px solid tan;
-  background-color: lightyellow; }
+main .attorney h2 {
+  margin-bottom: 10px; }
 main .learn {
   background-color: tan;
   border: none;
   color: black;
+  font-size: 14px;
   padding: 8px 20px;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 25px; }
+main .button {
+  background-color: tan;
+  border: none;
+  color: black;
+  padding: 20px 30px;
+  width: 25%;
+  margin: 0.5rem 2%; }
+main .blog {
+  column-count: 1; }
+main .blogpost {
+  border: 1px solid tan;
+  background-color: lightyellow; }
 main .read {
   background-color: tan;
   border: none;
@@ -188,32 +199,23 @@ main h3 {
 main p {
   line-height: 130%;
   color: black; }
-main div.attorneys .attorney {
-  float: left;
-  width: 46%; }
 main figure.photo {
   width: 100%; }
 main figure.photo img {
   width: 100%; }
+main .blog {
+  margin: 0.5rem 2%; }
 main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+  width: 100%; }
 main div.bottom article {
   background-color: lightyellow;
-  margin: .5rem;
+  margin: 0.5rem 2%;
   border: 1px solid tan;
   padding: .5rem; }
 main div.bottom article h3 {
   padding: 0.5rem- 2%; }
 main div.bottom article p {
   padding: 0.5rem- 2%; }
-main .button {
-  background-color: tan;
-  border: none;
-  color: black;
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none; }
 
 footer {
   width: 100%;
@@ -229,28 +231,17 @@ footer {
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 96%;
-    margin: 0.5rem 2%; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; }
-  main div.attorneys .attorney {
-    float: left;
-    width: 21%; }
-  main div.bottom article {
-    float: left;
-    width: 46%; }
-  main div.bottom .question {
-    width: 15%; } }
+@media only screen and (min-width: 852px) {
+  main .attorneys {
+    column-count: 4; }
+  main .blog {
+    column-count: 2; }
+  main .buttons {
+    width: 100%; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 75rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    margin: 0 auto; }
 
   nav ul {
     margin-left: 2%; }
@@ -259,10 +250,5 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
-  main figure.photo {
-    width: 96%;
-    margin: 0.5rem 2%; }
-  main div.blog article {
-    width: 21%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; } }
+  main .attorneys {
+    column-count: 4; } }

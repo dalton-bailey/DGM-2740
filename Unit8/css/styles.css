@@ -144,26 +144,20 @@ main {
   width: 65rem;
   margin: 0 auto; }
   main .first-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px; }
-  main .first-row figure.photo {
-    max-width: 50%; }
-  main .first-row figure.photo-1 img {
-    height: 100%;
-    border: solid 1px red; }
-  main .first-row figure.photo-2 {
-    height: 50%; }
-  main .first-row figure.photo-3 {
-    height: 50%; }
-  main .first-column {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px red; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); }
+  main .photo-1 {
+    grid-column: 2 / 1;
+    grid-row: 1 / 4; }
   main .second-row {
-    display: flex; }
+    column-count: 2;
+    margin: 0.5rem 2%; }
+  main .second-row .photo {
+    width: 100%; }
   main .second-row .photo img {
-    width: 25%; }
+    width: 100%; }
 
 footer {
   width: 100%;
@@ -202,8 +196,7 @@ footer {
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 80rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    margin: auto; }
 
   nav ul {
     margin-left: 2%;
@@ -213,4 +206,8 @@ footer {
   nav ul li:last-child {
     border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li a {
-    padding: .5rem 1rem; } }
+    padding: .5rem 1rem; }
+
+  main .second-row {
+    column-count: 4;
+    margin: 0.5rem 2%; } }

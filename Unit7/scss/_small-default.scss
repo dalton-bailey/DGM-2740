@@ -70,11 +70,9 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-    figure.banner {
-        width: 100%;
-    }
-
-    figure.banner img {
+    .attorneys {
+        column-count: 2;
+        margin: .5rem $gutter;
         width: 100%;
     }
 
@@ -82,12 +80,44 @@ main {
         display: flex; 
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         border: 1px solid $primaryColor;
-        margin: 15px 10px 20px 10px;
         width: 200px;
         height: 300px;
         background-color: $secondaryColor;
+    }
+
+    .attorney h2 {
+        margin-bottom: 10px;
+    }
+
+    .learn {
+        background-color: $primaryColor;
+        border: none;
+        color: $fontColor;
+        font-size: 14px;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .buttons {
+        // margin: .5rem $gutter;
+        // column-count: 1;
+    }
+
+    .button {
+        background-color: $primaryColor;
+        border: none;
+        color: $fontColor;
+        padding: 20px 30px;
+        width: 25%;
+        margin: .5rem $gutter;
+    }
+
+    .blog {
+        column-count: 1;
     }
 
     .blogpost {
@@ -95,15 +125,6 @@ main {
         background-color: $secondaryColor;
     }
 
-    .learn {
-        background-color: $primaryColor;
-        border: none;
-        color: $fontColor;
-        padding: 8px 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 10px;
-    }
 
     .read {
         background-color: $primaryColor;
@@ -138,11 +159,6 @@ main {
         color: $fontColor;
     }
 
-    div.attorneys .attorney {
-        float: left;
-        width: 50%-$gutterdbl;
-    }
-
     figure.photo {
         width: 100%;
     }
@@ -150,14 +166,17 @@ main {
         width: 100%;
     }
 
-    div.blog article {
+    .blog {
         margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
+    }
+
+    div.blog article {
+        width: 100%;
     }
 
     div.bottom article {
         background-color: $secondaryColor;
-        margin: .5rem;
+        margin: .5rem $gutter;
         border: 1px solid $primaryColor;
         padding: .5rem;
     }
@@ -168,18 +187,6 @@ main {
 
     div.bottom article p {
         padding: .5rem-$gutter;
-    }
-
-    .med-section {
-    }
-
-    .button {
-        background-color: $primaryColor;
-        border: none;
-        color: $fontColor;
-        padding: 20px 30px;
-        text-align: center;
-        text-decoration: none;
     }
 }
 
