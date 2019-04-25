@@ -17,6 +17,10 @@ body {
         margin-right: auto;
         width: 100%;
     }
+
+    figure.banner img:hover {
+        opacity: .8;
+    }
 }
 
 //Overall styling for the HEADER of the document.
@@ -24,6 +28,7 @@ header {
     color: white;
     padding: 1rem $gutter;
     margin-top: -130px;
+    position: absolute;
 
     h1 {
         font-size: 4rem;
@@ -37,7 +42,7 @@ header {
 
 //Overall styling for the NAVIGATION of the document.
     nav {
-        background-color: $secondaryColor;
+        background-image: linear-gradient(to right, $secondaryColor , #05DBF2);
         border-bottom: 1px solid rgba(0,0,0,0.3);
 
         ul li {
@@ -99,7 +104,7 @@ main {
         
     h1 {
         font-size: 2rem;
-        color: $secondaryColor;
+        color: black;
         margin: 30px 0px 10px 0px;
     }
 
@@ -127,7 +132,9 @@ main {
     }
 
     .card img{
+        margin: auto;
         width: 50px;
+        position: absolute;
     }
 }
 
