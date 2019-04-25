@@ -118,24 +118,32 @@ header {
 nav {
   background-color: lightyellow;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav button {
+    background-image: url(../photos/menuIconBlack.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: 86%;
+    background-position: center center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 6px 0 6px 2%; }
+  nav ul.closed {
+    display: none; }
   nav ul {
     margin-left: 2%; }
-  nav ul li {
-    float: left;
-    width: 25%;
-    width: auto; }
   nav ul li:last-child {
     border-right: none; }
   nav ul li a {
     display: block;
-    text-align: center;
-    font-weight: 700;
-    padding: .5rem 1rem;
+    padding: .7rem 2%;
     color: black;
     text-decoration: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #ffffad; }
+    background-color: #c49c67; }
   nav ul li a:hover {
     color: lightyellow;
     background-color: tan; }
@@ -220,11 +228,18 @@ main div.bottom article p {
 footer {
   width: 100%;
   background-color: lightyellow; }
-  footer p {
-    text-align: center;
-    color: black;
-    padding: .75rem;
-    font-size: .9rem; }
+  footer ul.social {
+    display: flex;
+    justify-content: center; }
+  footer ul.social li {
+    list-style-type: none;
+    margin: 5px; }
+  footer ul.social li a {
+    font-size: 3rem;
+    padding-left: .5rem;
+    color: tan; }
+  footer ul.social li a:hover {
+    color: white; }
 
 .clearfix:after {
   content: "";
@@ -232,6 +247,27 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 852px) {
+  nav {
+    position: relative; }
+    nav button {
+      display: none; }
+    nav ul.closed {
+      display: block; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.3); }
+    nav ul li {
+      float: left; }
+    nav ul li:last-child {
+      border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      padding: .5rem 1rem; }
+    nav ul li a:hover {
+      color: lightyellow;
+      background-color: tan; }
+
   main .attorneys {
     column-count: 4; }
   main .blog {
@@ -243,12 +279,7 @@ footer {
     max-width: 75rem;
     margin: 0 auto; }
 
-  nav ul {
-    margin-left: 2%; }
-  nav ul li {
-    width: auto; }
-  nav ul li a {
-    padding: .5rem 1rem; }
-
   main .attorneys {
-    column-count: 4; } }
+    column-count: 4; }
+  main .bottom {
+    display: flex; } }

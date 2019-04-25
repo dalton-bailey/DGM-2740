@@ -5,42 +5,15 @@ div#wrapper {
 }
 
 //Overall styling for the NAVIGATION of the document.
-nav {
-    ul {
-        margin-left: $gutter;
-    }
-
-    ul li {
-        width: auto;
-    }
-
-  //  ul li:last-child {
-   // }
-
-    ul li a {
-        padding: .5rem 1rem;
-    }
-}
 
 //Overall styling for the MAIN of the document.
 main {
     .attorneys {
         column-count: 4;
     }
-//    figure.photo {
-//        width: 100%-$gutterdbl;
-//        margin: .5rem $gutter;
-//    }
 
-//     div.blog article {
-//         width: 25%-$gutterdbl;
-//     }
+    .bottom {
+        display: flex;
+    }
 
-//     div.blog article:nth-child(2n+1) {
-//         clear:none;
-//     }
-
-//     div.bottom article {
-        
-//     }
 }
