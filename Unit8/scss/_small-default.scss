@@ -30,108 +30,133 @@ header {
         font-size: 1.5rem;
         font-weight: $normalWeight;
     }
+
+    ul.social {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.social li {
+        list-style-type: none;
+    }
+
+    ul.social li a {
+        font-size: 3rem;
+        padding-left: .5rem;
+        color: $secondaryColor;
+    }
+
+    ul.social li a:hover {
+        color: white;
+    }
+
+    .search input[type=text] {
+        border: none;
+        font-size: .8rem;
+      }
 }
 
 //Overall styling for the NAVIGATION of the document.
     nav {
-        background-color: $secondaryColor;
+        background-color: $menuColor;
+        width: 100%;
         border-bottom: 1px solid rgba(0,0,0,0.3);
 
-        ul li {
-            float: left;
-            width: 25%;
-            border-right: 1px solid rgba(0,0,0,0.3);
+        button {
+            background-image: url(../photos/menuIconWhite.png);
+            background-repeat: no-repeat;
+            width: 72px;
+            height: 32px;
+            background-color: rgba(0,0,0,0.1);
+            background-size: 86%;
+            background-position: center center;
+            border: 1px solid rgba(0, 0, 0,0.2);
+            border-radius: 10px;
+            margin: 6px 0 6px 2%;
         }
-
-        ul li:last-child {
-            border-right: none;
+        
+        ul.closed {
+            display: none;
         }
 
         ul li a {
             display: block;
-            text-align: center;
-            font-weight: $boldWeight;
-            padding: .5rem 0;
-            color: $primaryColor;
+            padding: .7rem 2%;
+            color: #fff;
             text-decoration: none;
+            border-bottom: solid 1px rgba(0, 0, 0,0.3);
             transition: background 0.75s ease, color  0.75s ease;
+        }
+
+        ul li ul li a {
+            padding-left: 8%;
         }
 
         ul li.active a {
             background-color: darken($secondaryColor, 10%);
         }
 
-        ul li a:hover {
-            color: $secondaryColor;
-            background-color: $primaryColor;
-        }
+        
     }
 
 //Overall styling for the MAIN of the document.
 main {
-    width: 65rem;
-    margin: 0 auto;
+   max-width: 60rem;
+   min-height: 20rem;
+   padding: 1rem 2%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   
+   h1 {
+       font-size: 2rem;
+       margin: 1.5rem 0 .5rem 0;
+       color: $primaryColor;
+   }
 
-    .first-row {
-        // column-count: 2;
-        // display:flex;
-        // justify-content: space-between;
-        // margin: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
+   h2 {
+       font-size: 1.2rem;
+       margin: 1.1rem 0 .2rem 0;
+       color: lighten($primaryColor, 20%);
     }
 
-    .photo-1 {
-        grid-column: 2 / 1;
-        grid-row: 1 / 4;
+    div.teaser {
+        position: relative;
     }
 
-    // .first-row figcaption {
-    //     margin-top: -40px;
-    //     padding-left: 15px;
-    //     font-size: 1.5rem;
-    //     color: white;
-    // }
-
-    // .first-row figure.photo {
-    //     max-width: 50%;
-    // }
-
-    // .first-row figure.photo-1 img {
-    //     height: 100%;
-    //     border: solid 1px red;
-    // }
-
-    // .first-row figure.photo-2 {
-    //     height: 50%;
-    // }
-
-    // .first-row figure.photo-3 {
-    //     height: 50%;
-    // }
-
-    // .first-column {
-    //     display:flex;
-    //     flex-direction: column;
-    //     border: solid 1px red;
-    // }
-
-    .second-row {
-       column-count: 2;
-       margin: .5rem $gutter;
+    div.teaser span {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        width: 100%;
+        padding: .3rem 2%;
+        color: white;
+        font-size: 1.5rem;
     }
 
-    .second-row .photo  {
+    div img {
+        display: block;
         width: 100%;
     }
 
-    .second-row .photo img {
-        width: 100%;
+    div.lead {
+        grid-row: 1;
+        grid-column: 1 / span 2;
     }
+
+    div.secondTop {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    div.secondBottom {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    
 }
-
 //Overall styling for the FOOTER of the document.
 footer {
     width: 100%;

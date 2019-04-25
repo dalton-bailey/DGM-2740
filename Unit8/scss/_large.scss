@@ -6,30 +6,28 @@ div#wrapper {
 
 //Overall styling for the NAVIGATION of the document.
 nav {
-    ul {
-        margin-left: $gutter;
-        border-left: 1px solid rgba(0,0,0,0.3);
-    }
-
-    ul li {
-        width: auto;
-    }
-
-    ul li:last-child {
-        border-right: 1px solid rgba(0,0,0,0.3);
-    }
-
-    ul li a {
-        padding: .5rem 1rem;
-    }
+    
 }
 
 //Overall styling for the MAIN of the document.
 
 main {
-    .second-row {
-        column-count: 4;
-        margin: .5rem $gutter;
-     }
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div.lead {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+    }
+
+    div.secondTop {
+        grid-row: 1;
+        grid-column: 3 / span 2;
+    }
+
+    div.secondBottom {
+        grid-row: 2;
+        grid-column: 3 / span 2;
+    }
 }
 

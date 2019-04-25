@@ -72,11 +72,17 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-    figure.banner {
-        width: 100%;
+    article {
+        margin: .5rem $gutter;
     }
 
-    figure.banner img {
+    article.gallery figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 65%;
+    }
+
+    article.gallery figure img {
         width: 100%;
     }
 
@@ -86,37 +92,28 @@ main {
         color: $fontColor;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $fontColor, 30% );
-    }
-
     p {
         line-height: 130%;
         color: $fontColor;
     }
 
+    figure.photo {
+        float: right;
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+    }
+
     figure.photo img {
         width: 200px;
-        clip-path: circle(50%);
+        height: 200px;
+        clip-path: circle(50% at 50% 50%);
+        
     }
 
-    .member div {
-        display:flex;
-        justify-content: space-between;
-    }
 
-    
     .members {
         column-count: 1;
-        margin: 1rem 0 0 $gutter;
-        shape-outside: circle(50%);
+        margin: 1rem 0 0 $gutter; 
     }
 }
 

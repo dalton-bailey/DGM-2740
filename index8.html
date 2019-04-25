@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>News</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="Unit8/css/styles.css" rel="stylesheet">
 </head>
 
@@ -16,14 +18,20 @@
             <div>
                 <img class="logo" src="images/news-logo.png">
             </div>
-            <div>
+            <div class="search">
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
                 <input type="text" placeholder="Search..">
             </div>
         </header>
 
         <!-- PAGE NAVIGATION GOES HERE -->
         <nav class="clearfix">
-            <ul class="clearfix">
+            <button id="hamburgerBtn"></button>
+            <ul id="primaryNav">
                 <li class="active"><a href="index8.html">Home</a></li>
                 <li><a href="second.html">Opinion</a></li>
                 <li><a href="third.html">Politics</a></li>
@@ -33,39 +41,39 @@
 
         <!-- PAGE CONTENT GOES HERE -->
         <main class="clearfix">
-            <div class="first-row">
-                <figure class="photo photo-1">
-                    <img src="images/news1.jpg">
-                    <figcaption>Elementum, sagittis adipiscing</figcaption>
-                </figure>
-                <div class="first-column">
-                    <figure class="photo photo-2">
-                        <img src="images/news2.jpg">
-                        <figcaption>Sagittis adipiscing</figcaption>
-                    </figure>
-                    <figure class="photo photo-3">
-                        <img src="images/news3.jpg">
-                        <figcaption>Sagittis adipiscing</figcaption>
-                    </figure>
-                </div>
+            <div class="teaser lead">
+                <img src="/images/hotel.jpg" alt="">
+                <span>"Virtual Hotel Service Announced"</span>
             </div>
-            <div class="second-row">
-                <figure class="photo photo-4">
-                    <img src="images/news4.jpg">
-                    <figcaption>Elementum, sagittis adipiscing</figcaption>
-                </figure>
-                <figure class="photo photo-5">
-                    <img src="images/news5.jpg">
-                    <figcaption>Elementum, sagittis adipiscing</figcaption>
-                </figure>
-                <figure class="photo photo-6">
-                    <img src="images/news6.jpg">
-                    <figcaption>Elementum, sagittis adipiscing</figcaption>
-                </figure>
-                <figure class="photo photo-7">
-                    <img src="images/news7.jpg">
-                    <figcaption>Elementum, sagittis adipiscing</figcaption>
-                </figure>
+
+            <div class="teaser secondTop">
+                <img src="/images/divorce.jpg" alt="">
+                <span>"Declining Divorce Rates Suprise Researchers"</span>
+            </div>
+
+            <div class="teaser secondBottom">
+                <img src="/images/room2.jpg" alt="">
+                <span>"Hotel Gets Facelift"</span>
+            </div>
+
+            <div class="teaser">
+                <img src="/images/story1.jpg" alt="">
+                <span>"Roaring 20's Hotel Reopens"</span>
+            </div>
+
+            <div class="teaser">
+                <img src="/images/story2.jpg" alt="">
+                <span>"Auto Recall Stuns Owners"</span>
+            </div>
+
+            <div class="teaser">
+                <img src="/images/story3.jpg" alt="">
+                <span>"Politician Behind Bars"</span>
+            </div>
+
+            <div class="teaser">
+                <img src="/images/story4.jpg" alt="">
+                <span>"New WIFI in Airports"</span>
             </div>
         </main>
 
@@ -105,6 +113,7 @@
             <p class="copyright">&copy; 2019 Bailey Dalton</p>
         </footer>
     </div>
+    <script src="unit8/js/menuToggle.js"></script>    
 </body>
 
 </html>
