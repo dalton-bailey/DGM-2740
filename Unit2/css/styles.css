@@ -107,7 +107,7 @@ header {
   align-items: flex-end;
   background-color: white;
   color: black;
-  padding: 10px 10px 10px 0; }
+  padding: 0.5rem 2%; }
   header div {
     margin-left: 10px; }
   header h1 {
@@ -146,13 +146,15 @@ main figure.banner {
   width: 100%; }
 main figure.banner img {
   width: 100%; }
+main .content {
+  margin: 0.5rem 2%; }
 main h2 {
   font-size: 2rem;
-  color: green; }
+  color: green;
+  margin-bottom: 1rem; }
 main p {
   line-height: 130%;
-  color: black;
-  margin: .75rem 0; }
+  color: black; }
 main figure.photo {
   width: 96%;
   float: right; }
@@ -209,18 +211,8 @@ footer {
 
   main {
     max-width: 75rem;
-    margin: auto;
-  /*  div.blog article {
-        float:left;
-        width: 33.33%-$gutterdbl;
-    }
-
-    div.blog article:nth-child(2n+1) {
-        clear:none;
-    }
-
-    div.blog article:nth-child(3n+1) {
-        clear:left;
-    }*/ }
+    margin: auto; }
     main figure.photo {
-      width: 21%; } }
+      width: 21%; }
+    main .content {
+      margin: 1rem 0 0 0; } }

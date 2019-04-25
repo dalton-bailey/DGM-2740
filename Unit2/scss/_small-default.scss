@@ -16,7 +16,7 @@ header {
     align-items: flex-end;
     background-color: $primaryColor;
     color: $fontColor;
-    padding: 10px 10px 10px 0;
+    padding: .5rem $gutter;
 
     div {
         margin-left: 10px;
@@ -81,42 +81,31 @@ main {
         width: 100%;
     }
 
-    h2 {
-        font-size: 2rem;
-        // margin: .5rem 0 0 $gutter;
-        color: $secondaryColor;
+    .content {
+        margin: .5rem $gutter;
     }
 
-    // h2 {
-    //     font-size: 1.5rem;
-    //     margin: .75rem 0 0 $gutter;
-    //     color: lighten( $fontColor, 40% );
-    // }
-
-    // h3 {
-    //     font-size: 1.2rem;
-    //     color: lighten( $fontColor, 30% );
-    // }
+    h2 {
+        font-size: 2rem;
+        color: $secondaryColor;
+        margin-bottom: 1rem;
+    }
 
     p {
         line-height: 130%;
         color: $fontColor;
-        margin: .75rem 0;
     }
 
     figure.photo {
         width: 100%-$gutterdbl;
-        // margin: .5rem $gutter;
         float: right;
     }
     
     figure.photo img {
         width: 100%;
-        // margin: .75rem 0 0 $gutter;
     }
 
     div.blog article {
-        // margin: .5rem $gutter;
         width: 100%-$gutterdbl;
     }
 }

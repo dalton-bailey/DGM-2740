@@ -13,7 +13,6 @@ nav {
     ul {
         max-width: 75rem;
         margin: auto;
-        // margin-left: $gutter;
         border-left: 1px solid rgba(0,0,0,0.3);
     }
 
@@ -37,21 +36,10 @@ main {
     
     figure.photo {
         width: 25%-$gutterdbl;
-        // margin: .5rem $gutter;
+        
     }
 
-
-  /*  div.blog article {
-        float:left;
-        width: 33.33%-$gutterdbl;
+    .content {
+        margin: 1rem 0 0 0;
     }
-
-    div.blog article:nth-child(2n+1) {
-        clear:none;
-    }
-
-    div.blog article:nth-child(3n+1) {
-        clear:left;
-    }*/
-
 }
