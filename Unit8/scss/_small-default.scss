@@ -160,8 +160,8 @@ footer {
     background-color: $primaryColor;
 
     .footer {
-        display: flex;
-        justify-content: space-around;
+        column-count: 1;
+        text-align: center;
         padding: 20px 30px 60px 30px;
     }
     
