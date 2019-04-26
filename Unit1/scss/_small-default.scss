@@ -6,8 +6,6 @@ body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
-    margin: 0 auto;
-    max-width: 75rem;
 }
 
 //Overall styling for the HEADER of the document.
@@ -66,6 +64,18 @@ main {
     h1 {
         font-size: 2rem;
     }
+    img {
+        max-width: 200px;
+    }
+        
+    #desktop {
+        display: none;
+    }
+        
+    #tablet {
+        display: none;
+    }
+
 }
 
 //Overall styling for the FOOTER of the document.
