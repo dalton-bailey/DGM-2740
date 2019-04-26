@@ -160,7 +160,7 @@ main .hotels {
   align-items: center;
   width: 300px;
   padding: 10px 15px 10px 15px;
-  margin-top: 10px; }
+  margin: 10px; }
 main .banner img {
   width: 100%;
   border-radius: 10px; }
