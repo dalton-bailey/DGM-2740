@@ -8,12 +8,12 @@ div#wrapper {
 
 //Overall styling for the MAIN of the document.
 main {
-    .attorneys {
-        column-count: 4;
-    }
+  //Column Layout
 
-    .bottom {
-        display: flex;
-    }
+@for $i from 1 through 12{
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {width: $w; float: left;}
+}
+
 
 }

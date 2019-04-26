@@ -148,82 +148,113 @@ nav {
     color: lightyellow;
     background-color: tan; }
 
-main .attorneys {
-  column-count: 2;
-  margin: 0.5rem 2%;
-  width: 100%; }
-main .attorney {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid tan;
-  width: 200px;
-  height: 300px;
-  background-color: lightyellow; }
-main .attorney h2 {
-  margin-bottom: 10px; }
-main .learn {
-  background-color: tan;
-  border: none;
-  color: black;
-  font-size: 14px;
-  padding: 8px 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-top: 25px; }
-main .button {
-  background-color: tan;
-  border: none;
-  color: black;
-  padding: 20px 30px;
-  width: 25%;
-  margin: 0.5rem 2%; }
-main .blog {
-  column-count: 1; }
-main .blogpost {
-  border: 1px solid tan;
-  background-color: lightyellow; }
-main .read {
-  background-color: tan;
-  border: none;
-  color: black;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  margin-top: 5px; }
-main h1 {
-  font-size: 2rem;
-  margin: 1rem 0 0 2%;
-  color: lightyellow; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: #666666; }
-main h3 {
-  font-size: 1.2rem;
-  color: #4d4d4d; }
-main p {
-  line-height: 130%;
-  color: black; }
-main figure.photo {
-  width: 100%; }
-main figure.photo img {
-  width: 100%; }
-main .blog {
-  margin: 0.5rem 2%; }
-main div.blog article {
-  width: 100%; }
-main div.bottom article {
-  background-color: lightyellow;
-  margin: 0.5rem 2%;
-  border: 1px solid tan;
-  padding: .5rem; }
-main div.bottom article h3 {
-  padding: 0.5rem- 2%; }
-main div.bottom article p {
-  padding: 0.5rem- 2%; }
+main {
+  max-width: 75rem;
+  margin: 0 auto; }
+  main figure.photo {
+    width: 100%; }
+  main figure.photo img {
+    width: 100%; }
+  main .attorney {
+    text-align: center;
+    border: 5px solid white;
+    background-color: lightyellow; }
+  main .attorney h2 {
+    font-size: 1.2rem;
+    color: #666666;
+    margin: 20px; }
+  main .learn {
+    background-color: tan;
+    border: none;
+    color: black;
+    font-size: 14px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: .8rem;
+    color: #666666; }
+  main .learn:hover {
+    color: lightyellow;
+    background-color: tan; }
+  main .button {
+    background-color: tan;
+    border: 5px solid white;
+    padding: 20px 30px;
+    width: 25%;
+    font-size: 1.2rem;
+    color: #666666; }
+  main .midsection div {
+    border: 5px solid white; }
+  main .button:hover {
+    color: lightyellow;
+    background-color: tan; }
+  main .blogpost {
+    border: 5px solid white;
+    background-color: lightyellow; }
+  main .read {
+    background-color: tan;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #666666; }
+  main h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 2%;
+    color: lightyellow; }
+  main .blogpost h3 {
+    padding: 0.5rem 2%; }
+  main .blogpost p {
+    padding: 0.5rem 2%; }
+  main .bottom article {
+    background-color: lightyellow;
+    border: 5px solid white; }
+  main .question h3 {
+    padding: 0.5rem 2%; }
+  main .question p {
+    padding: 0.5rem 2%; }
+  main .row {
+    clear: both; }
+  main .small-1 {
+    width: 8.3333333333%;
+    float: left; }
+  main .small-2 {
+    width: 16.6666666667%;
+    float: left; }
+  main .small-3 {
+    width: 25%;
+    float: left; }
+  main .small-4 {
+    width: 33.3333333333%;
+    float: left; }
+  main .small-5 {
+    width: 41.6666666667%;
+    float: left; }
+  main .small-6 {
+    width: 50%;
+    float: left; }
+  main .small-7 {
+    width: 58.3333333333%;
+    float: left; }
+  main .small-8 {
+    width: 66.6666666667%;
+    float: left; }
+  main .small-9 {
+    width: 75%;
+    float: left; }
+  main .small-10 {
+    width: 83.3333333333%;
+    float: left; }
+  main .small-11 {
+    width: 91.6666666667%;
+    float: left; }
+  main .small-12 {
+    width: 100%;
+    float: left; }
 
 footer {
   width: 100%;
@@ -268,18 +299,80 @@ footer {
       color: lightyellow;
       background-color: tan; }
 
-  main .attorneys {
-    column-count: 4; }
-  main .blog {
-    column-count: 2; }
-  main .buttons {
-    width: 100%; } }
+  main .medium-1 {
+    width: 8.3333333333%;
+    float: left; }
+  main .medium-2 {
+    width: 16.6666666667%;
+    float: left; }
+  main .medium-3 {
+    width: 25%;
+    float: left; }
+  main .medium-4 {
+    width: 33.3333333333%;
+    float: left; }
+  main .medium-5 {
+    width: 41.6666666667%;
+    float: left; }
+  main .medium-6 {
+    width: 50%;
+    float: left; }
+  main .medium-7 {
+    width: 58.3333333333%;
+    float: left; }
+  main .medium-8 {
+    width: 66.6666666667%;
+    float: left; }
+  main .medium-9 {
+    width: 75%;
+    float: left; }
+  main .medium-10 {
+    width: 83.3333333333%;
+    float: left; }
+  main .medium-11 {
+    width: 91.6666666667%;
+    float: left; }
+  main .medium-12 {
+    width: 100%;
+    float: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 75rem;
     margin: 0 auto; }
 
-  main .attorneys {
-    column-count: 4; }
-  main .bottom {
-    display: flex; } }
+  main .large-1 {
+    width: 8.3333333333%;
+    float: left; }
+  main .large-2 {
+    width: 16.6666666667%;
+    float: left; }
+  main .large-3 {
+    width: 25%;
+    float: left; }
+  main .large-4 {
+    width: 33.3333333333%;
+    float: left; }
+  main .large-5 {
+    width: 41.6666666667%;
+    float: left; }
+  main .large-6 {
+    width: 50%;
+    float: left; }
+  main .large-7 {
+    width: 58.3333333333%;
+    float: left; }
+  main .large-8 {
+    width: 66.6666666667%;
+    float: left; }
+  main .large-9 {
+    width: 75%;
+    float: left; }
+  main .large-10 {
+    width: 83.3333333333%;
+    float: left; }
+  main .large-11 {
+    width: 91.6666666667%;
+    float: left; }
+  main .large-12 {
+    width: 100%;
+    float: left; } }

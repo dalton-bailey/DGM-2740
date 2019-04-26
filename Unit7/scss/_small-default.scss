@@ -79,24 +79,27 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-    .attorneys {
-        column-count: 2;
-        margin: .5rem $gutter;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    figure.photo {
+        width: 100%;
+    }
+    figure.photo img {
         width: 100%;
     }
 
     .attorney {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid $primaryColor;
-        width: 200px;
-        height: 300px;
+        text-align: center;
+        border: 5px solid white;
         background-color: $secondaryColor;
+
     }
 
     .attorney h2 {
-        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: lighten( $fontColor, 40% );
+        margin: 20px;
     }
 
     .learn {
@@ -108,42 +111,49 @@ main {
         text-align: center;
         text-decoration: none;
         border-radius: 10px;
-        margin-top: 25px;
+        margin: 10px;
+        font-size: .8rem;
+        color: lighten( $fontColor, 40% );
     }
 
-    .buttons {
-        // margin: .5rem $gutter;
-        // column-count: 1;
+    .learn:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
     }
 
     .button {
         background-color: $primaryColor;
-        border: none;
-        color: $fontColor;
+        border: 5px solid white;
         padding: 20px 30px;
         width: 25%;
-        margin: .5rem $gutter;
+        // margin: 2rem;
+        font-size: 1.2rem;
+        color: lighten( $fontColor, 40% );
     }
 
-    .blog {
-        column-count: 1;
+    .midsection div {
+        border: 5px solid white;
+    }
+
+    .button:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
     }
 
     .blogpost {
-        border: 1px solid $primaryColor;
+        border: 5px solid white;
         background-color: $secondaryColor;
     }
-
 
     .read {
         background-color: $primaryColor;
         border: none;
-        color: $fontColor;
         padding: 10px;
         text-align: center;
         text-decoration: none;
         width: 100%;
-        margin-top: 5px;
+        font-size: 1rem;
+        color: lighten( $fontColor, 40% );
     }
 
     h1 {
@@ -152,52 +162,52 @@ main {
         color: $secondaryColor;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
+    // h3 {
+    //     font-size: 1.2rem;
+    //     color: lighten( $fontColor, 30% );
+    // }
+
+    // p {
+    //     line-height: 130%;
+    //     color: $fontColor;
+    // }
+
+    .blogpost h3 {
+        padding: .5rem $gutter;
     }
 
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $fontColor, 30% );
+    .blogpost p {
+        padding: .5rem $gutter; 
     }
 
-    p {
-        line-height: 130%;
-        color: $fontColor;
-    }
-
-    figure.photo {
-        width: 100%;
-    }
-    figure.photo img {
-        width: 100%;
-    }
-
-    .blog {
-        margin: .5rem $gutter;
-    }
-
-    div.blog article {
-        width: 100%;
-    }
-
-    div.bottom article {
+    .bottom article {
         background-color: $secondaryColor;
-        margin: .5rem $gutter;
-        border: 1px solid $primaryColor;
-        padding: .5rem;
+        border: 5px solid white;
     }
 
-    div.bottom article h3 {
-        padding: .5rem-$gutter;
+    .question h3 {
+        padding: .5rem $gutter;
     }
 
-    div.bottom article p {
-        padding: .5rem-$gutter;
+    .question p {
+        padding: .5rem $gutter;
     }
+
+//Column Layout
+    .row {
+        clear: both;
+    }
+
+    .column {
+        //  padding: 0 $gutter;
+    }
+
+    @for $i from 1 through 12{
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {width: $w; float: left;}
+    } 
 }
+
 
 //Overall styling for the FOOTER of the document.
 footer {
