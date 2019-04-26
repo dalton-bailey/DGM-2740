@@ -88,12 +88,9 @@ header {
             transition: background 0.75s ease, color  0.75s ease;
         }
 
-
         ul li.active a {
             background-color: darken($secondaryColor, 10%);
-        }
-
-        
+        } 
     }
 
 //Overall styling for the MAIN of the document.

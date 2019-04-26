@@ -101,75 +101,130 @@ body {
   font-size: 16px; }
 
 header {
-  background-color: lavenderblush;
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
   color: black;
   padding: 1rem 2%; }
+  header .logo {
+    border-style: solid;
+    border-color: transparent transparent lightsteelblue transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0 0 70px 0; }
+  header .logo:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: lightsteelblue transparent transparent transparent;
+    border-width: 70px 50px 0 50px; }
   header h1 {
     font-size: 2rem;
-    font-weight: 300; }
-  header h2 {
-    font-size: 1.5rem;
-    font-weight: 300; }
+    padding-left: .5rem; }
 
 nav {
-  background-color: pink;
+  background-color: #445ba9;
+  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li:last-child {
-    border-right: none; }
+  nav button {
+    background-image: url(/Unit8/photos/menuIconWhite.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: 86%;
+    background-position: center center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 6px 0 6px 2%; }
+  nav ul.closed {
+    display: none; }
   nav ul li a {
     display: block;
-    text-align: center;
-    font-weight: 700;
-    padding: .5rem 0;
-    color: lavenderblush;
+    padding: .7rem 2%;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    transition: background 0.75s ease, color  0.75s ease; }
+  nav ul li ul li {
+    display: block;
+    padding: .5rem;
+    color: #fff;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
-  nav ul li.active a {
-    background-color: #ff8da1; }
-  nav ul li a:hover {
-    color: pink;
-    background-color: lavenderblush; }
+  nav ul li ul li a {
+    padding-left: 5%; }
+  nav ul li ul li a:hover {
+    background-color: #354785; }
 
-main figure.banner {
-  width: 100%; }
-main figure.banner img {
-  width: 100%; }
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
-  color: pink; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: #666666; }
-main h3 {
-  font-size: 1.2rem;
-  color: #4d4d4d; }
-main p {
-  line-height: 130%;
-  color: black; }
-main figure.photo {
+  color: #445ba9; }
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%; }
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem; }
+
+.form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem; }
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 25px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+form label.sbs {
+  display: block;
+  padding: .75rem;
+  color: #555; }
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  border-radius: 1rem;
+  color: white;
+  padding: .75rem 1.5rem;
   width: 96%;
-  margin: 0.5rem 2%; }
-main figure.photo img {
-  width: 100%; }
-main figure.photo figcaption {
-  text-align: center;
-  color: pink; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+  margin: 0 0 2rem 2%;
+  max-width: 20rem; }
+
+form label.top input:required {
+  border-left: red solid 6px; }
+
+form label.top input:required:valid {
+  border-left: green solid 6px; }
 
 footer {
   width: 100%;
-  background-color: lavenderblush; }
+  background-color: lightblue; }
   footer p {
     text-align: center;
-    color: pink;
+    color: #445ba9;
     padding: .75rem;
     font-size: .9rem; }
 
@@ -179,6 +234,32 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
+  nav {
+    position: relative; }
+    nav button {
+      display: none; }
+    nav ul.closed {
+      display: block; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.3); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      padding: .5rem 1rem; }
+    nav ul li ul {
+      left: -999em;
+      z-index: 99;
+      background-color: #6176bf;
+      position: absolute;
+      width: 10rem; }
+    nav ul li:hover ul {
+      left: auto; }
+    nav ul li ul li {
+      float: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
   main figure.photo {
     width: 46%;
     margin: 0.5rem 2%;
@@ -190,17 +271,13 @@ footer {
     clear: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 80rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
+    max-width: 64rem;
+    margin: auto; }
 
   nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+    margin-left: 2%; }
   nav ul li {
     width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li a {
     padding: .5rem 1rem; }
 
@@ -215,5 +292,3 @@ footer {
     clear: none; }
   main div.blog article:nth-child(3n+1) {
     clear: left; } }
-
-/*# sourceMappingURL=styles.css.map */
