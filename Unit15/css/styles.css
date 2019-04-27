@@ -101,117 +101,182 @@ body {
   font-size: 16px; }
 
 header {
-  background-color: #0480b1;
-  color: #a8a8b2;
-  padding: 1rem 2%; }
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #a8a8b2;
+  width: 85rem;
+  margin: 0 auto; }
+  header div {
+    padding-left: 2px; }
   header h1 {
     font-size: 2rem;
-    font-weight: 300; }
+    color: #0480b1; }
   header h2 {
-    font-size: 1.5rem;
-    font-weight: 300; }
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #a8a8b2;
+    letter-spacing: .6rem; }
 
 nav {
-  background-color: #fdd831;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li:last-child {
-    border-right: none; }
+  width: 85rem;
+  margin: 0 auto; }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 10px 0; }
   nav ul li a {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    padding: .5rem 0;
-    color: #0480b1;
+    color: #a8a8b2;
     text-decoration: none;
-    transition: background 0.75s ease, color  0.75s ease; }
-  nav ul li.active a {
-    background-color: #f9cc02; }
+    transition: background 0.75s ease, color  0.75s ease;
+    padding: 1rem; }
+  nav ul li a img {
+    padding-right: 5px; }
   nav ul li a:hover {
-    color: #fdd831;
-    background-color: #0480b1; }
+    color: #0480b1; }
 
 main figure.banner {
-  width: 100%; }
+  width: 85rem;
+  margin: 0 auto; }
 main figure.banner img {
   width: 100%; }
-main h1 {
+main .top-section {
+  background-color: black;
+  max-width: 100%;
+  margin-top: -2px; }
+  main .top-section .sub-section {
+    width: 85rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between; }
+  main .top-section h1 {
+    font-size: 1.5rem;
+    color: #fdd831; }
+  main .top-section p {
+    line-height: 130%;
+    color: white; }
+  main .top-section .expect {
+    width: 75%; }
+  main .top-section .expect ul {
+    color: white;
+    margin: 1rem 0 2rem 6rem; }
+  main .top-section .italic {
+    font-style: italic;
+    margin-top: .5rem; }
+  main .top-section .formula {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  main .top-section .formula p {
+    font-size: 1.2rem; }
+  main .top-section .formula h1 {
+    margin-bottom: .5rem; }
+  main .top-section .success {
+    margin-top: .5rem;
+    font-style: italic; }
+main .more {
+  width: 85rem;
+  margin: 0 auto;
+  color: #0480b1;
   font-size: 2rem;
-  margin: 1rem 0 0 2%;
-  color: #fdd831; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: white; }
-main h3 {
-  font-size: 1.2rem;
-  color: #f9f9fa; }
-main p {
-  line-height: 130%;
-  color: #a8a8b2; }
-main figure.photo {
-  width: 96%;
-  margin: 0.5rem 2%; }
-main figure.photo img {
-  width: 100%; }
-main figure.photo figcaption {
-  text-align: center;
-  color: #fdd831; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+  padding: 4rem 0 0 0; }
+main .mid-section {
+  width: 85rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #a8a8b2;
+  border-bottom: 1px solid #a8a8b2;
+  background-color: #f9f9fa;
+  padding: 1rem 0 2rem 0; }
+  main .mid-section .column {
+    width: 22%;
+    display: flex;
+    flex-direction: column; }
+  main .mid-section .column img {
+    width: 100%; }
+  main .mid-section h1 {
+    color: #0480b1;
+    font-size: 2rem;
+    margin: 1rem 0 .5rem 0; }
+  main .mid-section p {
+    color: #a8a8b2;
+    line-height: 120%; }
+main .grid {
+  max-width: 85rem;
+  margin: 0 auto;
+  min-height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: #f9f9fa;
+  padding: 1rem 0 5rem 0; }
+  main .grid h1 {
+    font-size: 2rem;
+    margin: 1.5rem 0 .5rem 0;
+    color: #0480b1; }
+  main .grid div.teaser {
+    position: relative; }
+  main .grid div.teaser p {
+    display: block;
+    bottom: 0;
+    width: 100%;
+    color: #a8a8b2;
+    font-size: 1.5rem; }
+  main .grid div img {
+    display: block;
+    width: 100%; }
+  main .grid div.firstTop {
+    grid-row: 1;
+    grid-column: 1 / span 1; }
+  main .grid div.secondTop {
+    grid-row: 1;
+    grid-column: 2 / span 1; }
+  main .grid div.thirdTop {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 1; }
+    main .grid div.thirdTop div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: #a8a8b2;
+      margin-top: -6rem;
+      height: 5rem; }
+      main .grid div.thirdTop div button {
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        color: white;
+        border: none;
+        padding: .5rem 4rem .5rem 4rem;
+        background-image: linear-gradient(#0480b1, #014166); }
+  main .grid div.bottom {
+    grid-row: 2;
+    grid-column: 1 / span 2; }
+main .companies {
+  max-width: 85rem;
+  margin: 0 auto;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 footer {
   width: 100%;
-  background-color: #0480b1; }
+  background-image: linear-gradient(#0480b1, #014166); }
   footer p {
-    text-align: center;
-    color: #fdd831;
-    padding: .75rem;
-    font-size: .9rem; }
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700; }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 80rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
-
-  nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li a {
-    padding: .5rem 1rem; }
-
-  main figure.photo {
-    width: 21%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; } }
+    max-width: 100%;
+    margin: 1rem auto; } }

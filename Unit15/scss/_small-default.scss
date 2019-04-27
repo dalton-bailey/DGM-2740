@@ -8,118 +8,263 @@ body {
     font-size: 16px;
 }
 
-//Overall styling for the HEADER of the document.
+//Overall styling for the HEADER of the document. 
 header {
-    background-color: $primaryColor;
-    color: $fontColor;
-    padding: 1rem $gutter;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid $fontColor;
+    width: 85rem;
+    margin: 0 auto; 
 
+    div {
+      
+        padding-left: 2px;
+    }
     h1 {
         font-size: 2rem;
-        font-weight: $normalWeight;    
+        color: $primaryColor;  
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: $normalWeight;
+        color: $fontColor;
+        letter-spacing: .6rem;
     }
 }
 
 //Overall styling for the NAVIGATION of the document.
     nav {
-        background-color: $secondaryColor;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
-
-        ul li {
-            float: left;
-            width: 25%;
-            border-right: 1px solid rgba(0,0,0,0.3);
-        }
-
-        ul li:last-child {
-            border-right: none;
+        width: 85rem;
+        margin: 0 auto; 
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0 10px 0;
         }
 
         ul li a {
-            display: block;
-            text-align: center;
-            font-weight: $boldWeight;
-            padding: .5rem 0;
-            color: $primaryColor;
+            color: $fontColor;
             text-decoration: none;
             transition: background 0.75s ease, color  0.75s ease;
+            padding: 1rem;
         }
 
-        ul li.active a {
-            background-color: darken($secondaryColor, 10%);
+        ul li a img {
+            padding-right: 5px;
         }
 
         ul li a:hover {
-            color: $secondaryColor;
-            background-color: $primaryColor;
+            color: $primaryColor;
         }
     }
 
 //Overall styling for the MAIN of the document.
 main {
     figure.banner {
-        width: 100%;
+        width: 85rem;
+        margin: 0 auto; 
     }
 
     figure.banner img {
         width: 100%;
     }
 
-    h1 {
+    .top-section {
+        background-color: black;
+        max-width: 100%;
+        margin-top: -2px;
+    
+        .sub-section {
+            width: 85rem;
+            margin: 0 auto;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: $secondaryColor;
+        }
+
+        p {
+            line-height: 130%;
+            color: white;
+        }
+
+        .expect {
+            width: 75%;
+        }
+
+        .expect ul {
+            color: white;
+            margin: 1rem 0 2rem 6rem;
+        }
+
+        .italic {
+            font-style: italic;
+            margin-top: .5rem;
+        }
+
+        .formula {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .formula p {
+            font-size: 1.2rem;
+        }
+
+        .formula h1 {
+            margin-bottom: .5rem;
+        }
+
+        .success {
+            margin-top: .5rem;
+            font-style: italic;
+        }
+    }
+    
+    .more {
+        width: 85rem;
+        margin: 0 auto;
+        color: $primaryColor;
         font-size: 2rem;
-        margin: 1rem 0 0 $gutter;
-        color: $secondaryColor;
+        padding: 4rem 0 0 0;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
+    .mid-section {
+        width: 85rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $fontColor;
+        border-bottom: 1px solid $fontColor;
+        background-color: lighten($fontColor, 30%);
+        padding: 1rem 0 2rem 0;
+
+        .column {
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column img {
+            width: 100%;
+        }
+
+        h1 {
+            color: $primaryColor;
+            font-size: 2rem;
+            margin: 1rem 0 .5rem 0;
+        }
+
+        p {
+            color: $fontColor;
+            line-height: 120%;
+        }
     }
 
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $fontColor, 30% );
+    .grid {
+        max-width: 85rem;
+        margin: 0 auto;
+        min-height: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        background-color: lighten($fontColor, 30%);
+        padding: 1rem 0 5rem 0;
+        
+        h1 {
+            font-size: 2rem;
+            margin: 1.5rem 0 .5rem 0;
+            color: $primaryColor;
+        }
+     
+         div.teaser {
+             position: relative;
+         }
+     
+         div.teaser p {
+             display: block;
+             bottom: 0;
+             width: 100%;
+             color: $fontColor;
+             font-size: 1.5rem;
+         }
+     
+         div img {
+             display: block;
+             width: 100%;
+         }
+     
+         div.firstTop {
+             grid-row: 1;
+             grid-column: 1 / span 1;
+         }
+     
+         div.secondTop {
+             grid-row: 1;
+             grid-column: 2 / span 1;
+         }
+
+         div.thirdTop {
+             grid-row: 1 / span 2;
+             grid-column: 3 / span 1;
+
+            div {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 justify-content: space-between;
+                 color: $fontColor;
+                 margin-top: -6rem;
+                 height: 5rem;
+
+                 button {
+                    border-radius: 1rem;
+                    font-size: 1.2rem;
+                    color: white;
+                    border: none;
+                    padding: .5rem 4rem .5rem 4rem;
+                    background-image: linear-gradient($primaryColor, #014166 );
+                 }
+
+             }
+
+             
+         }
+
+         div.bottom {
+             grid-row: 2;
+             grid-column: 1 / span 2;
+         }
+     
     }
 
-    p {
-        line-height: 130%;
-        color: $fontColor;
+    .companies {
+        max-width: 85rem;
+        margin: 0 auto;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-
-    figure.photo {
-        width: 100%-$gutterdbl;
-        margin: .5rem $gutter;
-    }
-    figure.photo img {
-        width: 100%;
-    }
-
-    figure.photo figcaption {
-        text-align: center;
-        color: $secondaryColor;
-    }
-
-    div.blog article {
-        margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
-    }
+    
 }
 
 //Overall styling for the FOOTER of the document.
 footer {
     width: 100%;
-    background-color: $primaryColor;
+    background-image: linear-gradient($primaryColor, #014166 );
 
     p {
-        text-align: center;
-        color: $secondaryColor;
-        padding: .75rem;
-        font-size: .9rem;
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: $boldWeight;
     }
 }
 
