@@ -104,7 +104,7 @@ header {
   display: flex;
   align-items: flex-end;
   border-bottom: 1px solid #a8a8b2;
-  width: 85rem;
+  width: 70rem;
   margin: 0 auto; }
   header div {
     padding-left: 2px; }
@@ -118,7 +118,7 @@ header {
     letter-spacing: .6rem; }
 
 nav {
-  width: 85rem;
+  width: 70rem;
   margin: 0 auto; }
   nav ul {
     display: flex;
@@ -135,7 +135,7 @@ nav {
     color: #0480b1; }
 
 main figure.banner {
-  width: 85rem;
+  width: 70rem;
   margin: 0 auto; }
 main figure.banner img {
   width: 100%; }
@@ -144,7 +144,7 @@ main .top-section {
   max-width: 100%;
   margin-top: -2px; }
   main .top-section .sub-section {
-    width: 85rem;
+    width: 70rem;
     margin: 0 auto;
     padding-top: 1.5rem;
     display: flex;
@@ -175,13 +175,13 @@ main .top-section {
     margin-top: .5rem;
     font-style: italic; }
 main .more {
-  width: 85rem;
+  width: 70rem;
   margin: 0 auto;
   color: #0480b1;
   font-size: 2rem;
   padding: 4rem 0 0 0; }
 main .mid-section {
-  width: 85rem;
+  width: 70rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -203,7 +203,7 @@ main .mid-section {
     color: #a8a8b2;
     line-height: 120%; }
 main .grid {
-  max-width: 85rem;
+  max-width: 70rem;
   margin: 0 auto;
   min-height: 20rem;
   display: grid;
@@ -255,7 +255,7 @@ main .grid {
     grid-row: 2;
     grid-column: 1 / span 2; }
 main .companies {
-  max-width: 85rem;
+  max-width: 70rem;
   margin: 0 auto;
   height: 5rem;
   display: flex;

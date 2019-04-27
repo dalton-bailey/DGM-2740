@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: flex-end;
     border-bottom: 1px solid $fontColor;
-    width: 85rem;
+    width: 70rem;
     margin: 0 auto; 
 
     div {
@@ -34,7 +34,7 @@ header {
 
 //Overall styling for the NAVIGATION of the document.
     nav {
-        width: 85rem;
+        width: 70rem;
         margin: 0 auto; 
         ul {
             display: flex;
@@ -61,7 +61,7 @@ header {
 //Overall styling for the MAIN of the document.
 main {
     figure.banner {
-        width: 85rem;
+        width: 70rem;
         margin: 0 auto; 
     }
 
@@ -75,7 +75,7 @@ main {
         margin-top: -2px;
     
         .sub-section {
-            width: 85rem;
+            width: 70rem;
             margin: 0 auto;
             padding-top: 1.5rem;
             display: flex;
@@ -127,7 +127,7 @@ main {
     }
     
     .more {
-        width: 85rem;
+        width: 70rem;
         margin: 0 auto;
         color: $primaryColor;
         font-size: 2rem;
@@ -135,7 +135,7 @@ main {
     }
 
     .mid-section {
-        width: 85rem;
+        width: 70rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -167,7 +167,7 @@ main {
     }
 
     .grid {
-        max-width: 85rem;
+        max-width: 70rem;
         margin: 0 auto;
         min-height: 20rem;
         display: grid;
@@ -245,7 +245,7 @@ main {
     }
 
     .companies {
-        max-width: 85rem;
+        max-width: 70rem;
         margin: 0 auto;
         height: 5rem;
         display: flex;
