@@ -242,8 +242,7 @@ footer {
       background-color: #F1E5C0; }
 
   main a.coolTrick {
-    width: 46%;
-    margin: 1rem 2%; } }
+    width: 46%; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 64rem;
@@ -260,5 +259,4 @@ footer {
     padding: .5rem 1rem; }
 
   main a.coolTrick {
-    width: 21%;
-    margin: 1rem 2%; } }
+    width: 21%; } }
