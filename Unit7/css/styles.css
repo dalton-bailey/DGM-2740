@@ -185,6 +185,8 @@ main {
     width: 25%;
     font-size: 1.2rem;
     color: #666666; }
+  main .midsection {
+    margin: 0 2rem 0 2rem; }
   main .midsection div {
     border: 5px solid white; }
   main .button:hover {

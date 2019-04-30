@@ -131,6 +131,9 @@ main {
         color: lighten( $fontColor, 40% );
     }
 
+    .midsection {
+        margin: 0 2rem 0 2rem;
+    }
     .midsection div {
         border: 5px solid white;
     }
