@@ -13,11 +13,9 @@ header {
     display: flex;
     align-items: flex-end;
     border-bottom: 1px solid $fontColor;
-    width: 70rem;
     margin: 0 auto; 
 
     div {
-      
         padding-left: 2px;
     }
     h1 {
@@ -34,7 +32,6 @@ header {
 
 //Overall styling for the NAVIGATION of the document.
     nav {
-        width: 70rem;
         margin: 0 auto; 
         ul {
             display: flex;
@@ -61,7 +58,7 @@ header {
 //Overall styling for the MAIN of the document.
 main {
     figure.banner {
-        width: 70rem;
+        max-width: 70rem;
         margin: 0 auto; 
     }
 
@@ -70,16 +67,19 @@ main {
     }
 
     .top-section {
+        max-width: 90rem;
+        margin: 0 auto;
         background-color: black;
-        max-width: 100%;
         margin-top: -2px;
     
         .sub-section {
-            width: 70rem;
+            max-width: 70rem;
             margin: 0 auto;
             padding-top: 1.5rem;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-between;
         }
 
         h1 {
@@ -109,7 +109,8 @@ main {
         .formula {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center;
+            // align-items: flex-end;
         }
 
         .formula p {
@@ -127,7 +128,8 @@ main {
     }
     
     .more {
-        width: 70rem;
+        max-width: 70rem;
+        // width: 25rem;
         margin: 0 auto;
         color: $primaryColor;
         font-size: 2rem;
@@ -135,17 +137,19 @@ main {
     }
 
     .mid-section {
-        width: 70rem;
+        max-width: 70rem;
+        // width: 25rem;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
         border-top: 1px solid $fontColor;
         border-bottom: 1px solid $fontColor;
         background-color: lighten($fontColor, 30%);
         padding: 1rem 0 2rem 0;
 
         .column {
-            width: 22%;
+            width: 100%;
             display: flex;
             flex-direction: column;
         }
@@ -168,12 +172,13 @@ main {
 
     .grid {
         max-width: 70rem;
+        // width: 25rem;
         margin: 0 auto;
         min-height: 20rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // grid-column-gap: 10px;
+        // grid-row-gap: 10px;
         background-color: lighten($fontColor, 30%);
         padding: 1rem 0 5rem 0;
         
@@ -200,19 +205,21 @@ main {
              width: 100%;
          }
      
-         div.firstTop {
-             grid-row: 1;
-             grid-column: 1 / span 1;
-         }
+        //  div.firstTop {
+        //      grid-row: 1;
+        //      grid-column: 1 / span 1;
+        //     grid-row: 1;
+            
+        //  }
      
-         div.secondTop {
-             grid-row: 1;
-             grid-column: 2 / span 1;
-         }
+        //  div.secondTop {
+        //      grid-row: 2;
+        //      grid-column: 2 / span 1;
+        //  }
 
          div.thirdTop {
-             grid-row: 1 / span 2;
-             grid-column: 3 / span 1;
+            //  grid-row: 1 / span 2;
+            //  grid-column: 3 / span 1;
 
             div {
                  display: flex;
@@ -237,20 +244,22 @@ main {
              
          }
 
-         div.bottom {
-             grid-row: 2;
-             grid-column: 1 / span 2;
-         }
+        //  div.bottom {
+        //      grid-row: 2;
+        //      grid-column: 1 / span 2;
+        //  }
      
     }
 
     .companies {
-        max-width: 70rem;
-        margin: 0 auto;
-        height: 5rem;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
+    }
+
+    .companies figure {
+        padding: 10px;
     }
     
 }
@@ -265,6 +274,7 @@ footer {
         padding: 1rem;
         font-size: 1rem;
         font-weight: $boldWeight;
+        // text-align: center;
     }
 }
 

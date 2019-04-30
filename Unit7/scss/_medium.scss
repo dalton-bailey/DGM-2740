@@ -39,9 +39,6 @@ nav {
 }
  main {
 
-
- //Column Layout
-
 @for $i from 1 through 12{
     $w: ($i / 12) * 100%;
     .medium-#{$i} {width: $w; float: left;}
